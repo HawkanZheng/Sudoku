@@ -1,4 +1,5 @@
-# GUI.py
+# sudoku_gui.py
+# GUI for sudoku game
 import pygame
 from sudoku_solver import solve, valid
 import time
@@ -167,7 +168,7 @@ class Cube:
 def redraw_window(win, brd, time, strikes):
     win.fill((255,255,255))
     # Draw time
-    fnt = pygame.font.SysFont("consolas", 40)
+    fnt = pygame.font.SysFont("Arial", 40)
     text = fnt.render("Time:" + format_time(time), 1, (0,0,0))
     win.blit(text, (540 - 160, 560))
     # Draw Strikes
